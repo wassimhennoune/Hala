@@ -352,7 +352,7 @@ class Chat extends Component {
         this.drawer._root.open()
     };
 
-    _search()
+    _search= () => 
     {
         this.props.search_friend(this.props.thisUser)
         this.closeDrawer();
