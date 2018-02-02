@@ -3,7 +3,6 @@ import { Scene, Router } from 'react-native-router-flux';
 import LoginForm from './components/LoginForm';
 import Chat from './components/chat';
 import EmailUs from './components/EmailUs';
-import Test from './components/Test';
 
 const RouterComponent = () => {
   return (
@@ -12,7 +11,6 @@ const RouterComponent = () => {
                   <Scene tabBarStyle={styles.tabBarStyle} key="login" initial component={LoginForm} hideNavBar  />
                   <Scene tabBarStyle={styles.tabBarStyle} key="emailUs" title="راسلنا" component={EmailUs} />
                   <Scene tabBarStyle={styles.tabBarStyle} key="chat" type="replace" hideNavBar component={Chat} />
-                  <Scene tabBarStyle={styles.tabBarStyle} key="test" type="replace"    component={Test} />
             </Scene >
           </Router>
   );
